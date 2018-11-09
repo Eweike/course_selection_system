@@ -1,0 +1,80 @@
+body{
+    font-family: "Microsoft YaHei UI";
+    height: 100%;
+}
+#top-navbar{
+    background-color: #438EB9;
+    margin: 0 auto;
+}
+.user-portrait{
+    margin: -4px 8px 0 0;
+    border-radius: 50%;
+    border: 2px solid #FFF;
+    max-width: 40px !important;
+    max-height: 50px;
+}
+#user-menu{
+    padding:2px 0;
+}
+#user-menu li {
+    color: #72777b;
+}
+#user-menu a {
+    padding: 7px 15px;
+}
+#user-menu li span{
+    margin-right: 3px;
+}
+#menu-list a{
+    color: #fff;
+    transition: 0.5s;
+}
+#menu-list a:hover{
+    background-color: #3C82B4;
+    transition: 0.5s;
+}
+#menu-list .actived a{
+    color: #438EB9 !important;
+    background-color: #fff;
+}
+ul,li{
+    list-style: none
+}
+.scroll {
+    height:205px;
+    width:100%;
+    overflow:hidden;
+}
+.scroll ul {
+    width:100%;
+    position:absolute;
+    left:0;
+    top:0;
+}
+.scroll span {
+    font-size:20px;
+    height:30px;
+}
+.scroll li {
+    height:30px;
+    line-height:30px;
+}
+#gonggao li{
+    height: 30px;
+}#gonggao li a{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+ .bottom-tip{
+     box-sizing: border-box;
+     width: 100%;
+     position: absolute;
+     bottom: 0;
+     padding: 10px 0;
+     background-color: #438EB9;
+     border-radius: 5px;
+     display: block;
+     text-align: center;
+ }

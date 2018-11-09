@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    font: 14px Helvetica Neue, Helvetica, PingFang SC, 微软雅黑, Tahoma, Arial, sans-serif;
+}
+
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-color: #242645;
+    color: #fff;
+    background-size: 100%;
+    background-image: url(../images/Starry.jpg);
+}
+
+body ::-webkit-input-placeholder {
+    color: #4E546D;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-box {
+    width: 240px;
+    height: 320px;
+    position: fixed;
+    padding: 110px 40px 30px 40px;
+    margin-top: 150px;
+    box-shadow: -15px 15px 15px rgba(6, 17, 47, 0.7);
+    opacity: 1;
+    background: linear-gradient(230deg, rgba(53, 57, 74, 0) 0%, rgb(0, 0, 0) 100%); /*linear-gradient(渐变的方向或角度，渐变的颜色)*/
+}
+
+.login-box #tipText {
+    color: #D3D7F7;
+    height: 60px;
+    text-align: left;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.input-box {
+    height: 200px;
+    left: 0;
+    line-height: 50px;
+    position: relative;     /*设置相对定位*/
+    perspective: 1000000px; /*设置3D-y轴长度*/
+    transform-style: preserve-3d;   /*设置3D转换*/
+    transition: 1s;     /*2s过渡*/
+}
+
+.input-item {
+    width: 100%;
+}
+
+.input-item img {
+    z-index: 1;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+.input-item input {
+    width: 190px;
+    background: rgba(57, 61, 82, 0);
+    left: 0;
+    padding: 10px 10px;
+    border-top: 2px solid rgba(57, 61, 82, 0);
+    border-bottom: 2px solid rgba(57, 61, 82, 0);
+    border-right: none;
+    border-left: none;
+    outline: none; /*设置四个边框的样式*/
+    font-family: 'Gudea', sans-serif;
+    color: #61BFFF;
+}
+
+input::-webkit-input-placeholder {
+    color: #afb1be;
+    opacity: 1;
+}
+
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #afb1be;
+    opacity: 1;
+}
+
+#keyValue {
+    width: 50px;
+    height: 30px;
+    padding: 5px 10px;
+    background: rgba(57, 61, 82, 0);
+    color: #D3D7F7;
+    font-size: 24px;
+}
+
+.login-btn {
+    width: 100%;
+    margin-top: 30px;
+    /*margin: auto;*/
+}
+
+.login-btn input {
+    display: inline-block;
+    border-radius: 50px;
+    background: transparent;
+    padding: 10px 26px;
+    border: 2px solid #4FA1D9;
+    color: #4FA1D9;
+    font-size: 11px;
+    -webkit-transition-property: background,color;    /*过渡效果*/
+            transition-property: background,color;
+    -webkit-transition-duration: .2s;           /*过渡时间*/
+            transition-duration: .2s;
+}
+.login-btn input:focus {          /*取消点击时的垃圾边框*/
+    box-shadow: none;
+    outline: none;
+}
+.login-btn input:hover {
+    color: white;
+    background: #4FA1D9;
+    cursor: pointer;             /*改变鼠标指针样式为手指状*/
+    -webkit-transition-property: background,color;    /*令background和color获得过渡效果*/
+    transition-property: background,color;
+    -webkit-transition-duration: .2s;
+    transition-duration: .2s;
+}
+.input-bottom{
+    width: 100%;
+    margin-top: 50px;
+}

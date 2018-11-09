@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<package name="json" namespace="/" extends="json-default">
+        <action name="curriculumList" class="com.shf.action.courseAction" method="curriculumList">
+            <result name="success" type="json">
+                <param name="root">curriculumList</param>
+            </result>
+        </action>
+        <action name="CNameDetail" class="com.shf.action.courseAction" method="CNameDetail">
+            <result name="success" type="json">
+                <param name="root">CNameDetail</param>
+            </result>
+        </action>
+        <action name="courseStudentsList" class="com.shf.action.courseAction" method="courseStudentsList">
+            <result name="success" type="json">
+                <param name="root">courseStudentsList</param>
+            </result>
+        </action>
+        <action name="upDataScore" class="com.shf.action.courseAction" method="upDataScore">
+            <result name="success" type="json">
+                <param name="root">updataResult</param>
+            </result>
+        </action>
+        <action name="addScore" class="com.shf.action.courseAction" method="addScore">
+            <result name="success" type="json">
+                <param name="root">addNewScore</param>
+            </result>
+        </action>
+        <action name="statisticsScore" class="com.shf.action.courseAction" method="statisticsScore">
+            <result name="success" type="json">
+                <param name="root">scoreList</param>
+            </result>
+        </action>
+        <action name="subScore" class="com.shf.action.courseAction" method="subScore">
+            <result name="success" type="json">
+                <param name="root">subResult</param>
+            </result>
+        </action>
+        <action name="searchByCondition" class="com.shf.action.courseAction" method="searchByCondition">
+            <result name="success" type="json">
+                <param name="root">courseStudentsList</param>
+            </result>
+        </action>
+        <action name="loadScoreInfo" class="com.shf.action.courseAction" method="loadScoreInfo">
+            <result name="success" type="json">
+                <param name="root">updataResult</param>
+            </result>
+        </action>
+    </package>
+</struts>    
